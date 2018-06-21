@@ -20,6 +20,8 @@ import bus from 'src/editor/bus.js';
 import debounce from "debounce";
 import Btn from "./Button.vue";
 
+import blockQuote from "./modules/blockQuote.js";
+
 import bold from "./modules/bold.js";
 import italic from "./modules/italic.js";
 import underline from "./modules/underline.js";
@@ -43,7 +45,7 @@ import removeFormat from "./modules/removeFormat.js";
 import separator from "./modules/separator.js";
 
 const modules = [
-    bold, italic, underline, separator,
+    bold, italic, underline, blockQuote, separator,
     alignLeft, alignCenter, alignRight, separator,
     headings, hyperlink, code,
     list_ordered, list_unordered, separator,
